@@ -15,7 +15,10 @@ const NavbarTwoColumns = (props: INavbarProps) => (
       <Link href="/">
         <a>{props.logo}</a>
       </Link>
-      <div style={{ color: 'black', fontWeight: 700, fontSize: 30 }}>
+      <div
+        className="ml-4"
+        style={{ color: 'black', fontWeight: 700, fontSize: 30 }}
+      >
         Gwood Asia
       </div>
     </div>
