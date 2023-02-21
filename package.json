@@ -19,9 +19,11 @@
     "next-seo": "^4.29.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-globe": "5.0.2",
+    "react-globe": "^2.0.1",
+    "react-globe.gl": "^2.23.3",
+    "react-sizeme": "^3.0.2",
     "styled-jsx-plugin-postcss": "^4.0.1",
-    "three": "0.109.0"
+    "three": "^0.149.0"
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^12.0.9",
