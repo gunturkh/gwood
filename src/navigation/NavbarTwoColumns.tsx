@@ -9,10 +9,15 @@ type INavbarProps = {
 
 const NavbarTwoColumns = (props: INavbarProps) => (
   <div className="flex flex-wrap justify-between items-center">
-    <div>
+    <div
+      style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}
+    >
       <Link href="/">
         <a>{props.logo}</a>
       </Link>
+      <div style={{ color: 'black', fontWeight: 700, fontSize: 30 }}>
+        Gwood Asia
+      </div>
     </div>
 
     <nav>

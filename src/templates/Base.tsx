@@ -1,17 +1,30 @@
+import dynamic from 'next/dynamic';
+
+import { Hero } from './Hero';
+import bg from '../../public/assets/images/newbg.png';
 import { Meta } from '../layout/Meta';
 import { AppConfig } from '../utils/AppConfig';
-import { Banner } from './Banner';
-import { Footer } from './Footer';
-import { Hero } from './Hero';
-import { VerticalFeatures } from './VerticalFeatures';
+
+const ReactGlobe = dynamic(() => import('react-globe'), {
+  ssr: false,
+});
 
 const Base = () => (
-  <div className="antialiased text-gray-600">
+  <div
+    className="antialiased text-gray-600"
+    style={{
+      backgroundImage: `url(${bg.src})`,
+      width: '100%',
+      height: '100%',
+      backgroundSize: 'cover',
+    }}
+  >
     <Meta title={AppConfig.title} description={AppConfig.description} />
     <Hero />
-    <VerticalFeatures />
-    <Banner />
-    <Footer />
+    <ReactGlobe height="90vh" globeBackgroundTexture={null} />
+    {/* <VerticalFeatures /> */}
+    {/* <Banner /> */}
+    {/* <Footer /> */}
   </div>
 );
 

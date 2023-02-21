@@ -18,5 +18,10 @@
   "[json][jsonc]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#0A3520",
+    "titleBar.activeBackground": "#0E4A2D",
+    "titleBar.activeForeground": "#F2FCF7"
   }
 }
