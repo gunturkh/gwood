@@ -1,3 +1,4 @@
+/* eslint-disable global-require */
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
@@ -44,5 +45,21 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('daisyui')],
+  // daisyui: {
+  //   styled: true,
+  //   themes: [
+  //     {
+  //       mytheme: {
+  //         secondary: '#820100',
+  //       },
+  //     },
+  //   ],
+  //   base: true,
+  //   utils: true,
+  //   logs: true,
+  //   rtl: false,
+  //   prefix: '',
+  //   darkTheme: 'dark',
+  // },
 };

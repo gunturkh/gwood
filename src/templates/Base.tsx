@@ -6,9 +6,9 @@ import { useRef, useState } from 'react';
 import { GlobeMethods } from 'react-globe.gl';
 import { SizeMe } from 'react-sizeme';
 
-import { Hero } from './Hero';
 import bg from '../../public/assets/images/newbg.png';
 import { Meta } from '../layout/Meta';
+import Navbar from '../navigation/Navbar';
 import { AppConfig } from '../utils/AppConfig';
 
 let Globe: any = () => null;
@@ -66,7 +66,7 @@ const Base = () => {
       <SizeMe monitorHeight>
         {({ size: { width } }) => (
           <>
-            <Hero />
+            <Navbar />
             <Globe
               ref={globeEl}
               onGlobeReady={() => {
