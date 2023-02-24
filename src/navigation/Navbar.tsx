@@ -7,7 +7,7 @@ import GWoodLogo from '../../public/assets/images/logo.png';
 
 function Navbar() {
   return (
-    <div className="navbar bg-accent-content">
+    <div className="navbar bg-accent-content px-10">
       <div className="navbar-start">
         <Image src={GWoodLogo} alt="logo" height={63} width={60} />
         <a
@@ -17,7 +17,7 @@ function Navbar() {
           Gwood Asia
         </a>
       </div>
-      <div className="navbar-end">
+      <div className="navbar-end ">
         <div style={{ color: '#151206', fontWeight: 600 }}>Menu</div>
         <div
           className="dropdown dropdown-bottom dropdown-end"
@@ -38,21 +38,31 @@ function Navbar() {
               ></path>
             </svg>
           </label>
-          <div className="dropdown-content card-body text-center bg-accent-content w-60 p-2 group-hover:block">
-            <Link href="/" className="my-4" style={{ color: 'red' }}>
-              Home
+          <div className="dropdown-content card-body text-center bg-accent-content w-40 p-2 mr-[-25px] rounded-b-xl">
+            <Link href="/" className="my-4">
+              <div className="hover:bg-[#820100] mx-[10px] py-2 hover:text-white hover:font-semibold font-medium rounded-xl">
+                Home
+              </div>
             </Link>
             <Link href="/about" className="my-4">
-              About Us
+              <div className="hover:bg-[#820100] mx-[10px] py-2 hover:text-white hover:font-semibold font-medium rounded-xl">
+                About Us
+              </div>
             </Link>
             <Link href="/capabilities" className="my-4">
-              Capabilities
+              <div className="hover:bg-[#820100] mx-[10px] py-2 hover:text-white hover:font-semibold font-medium rounded-xl">
+                Capabilities
+              </div>
             </Link>
             <Link href="/companies" className="my-4">
-              Companies
+              <div className="hover:bg-[#820100] mx-[10px] py-2 hover:text-white hover:font-semibold font-medium rounded-xl">
+                Companies
+              </div>
             </Link>
             <Link href="/contacts" className="my-4">
-              Contacts
+              <div className="hover:bg-[#820100] mx-[10px] py-2 hover:text-white hover:font-semibold font-medium rounded-xl">
+                Contacts
+              </div>
             </Link>
           </div>
         </div>
