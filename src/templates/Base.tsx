@@ -152,9 +152,6 @@ const Base = () => {
           </>
         )}
       </SizeMe>
-      {/* <VerticalFeatures /> */}
-      {/* <Banner /> */}
-      {/* <Footer /> */}
     </div>
   );
 };

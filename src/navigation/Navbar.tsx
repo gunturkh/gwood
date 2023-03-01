@@ -2,16 +2,26 @@ import React from 'react';
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 import GWoodLogo from '../../public/assets/images/logo.png';
 
 function Navbar() {
+  const router = useRouter();
   return (
     <div className="navbar bg-accent-content px-10">
       <div className="navbar-start">
-        <Image src={GWoodLogo} alt="logo" height={63} width={60} />
+        <Image
+          src={GWoodLogo}
+          alt="logo"
+          height={63}
+          width={60}
+          onClick={() => router.push('/')}
+          className="cursor-pointer"
+        />
         <a
           className="btn btn-ghost normal-case text-2xl  "
+          href={'/'}
           style={{ color: '#151206' }}
         >
           Gwood Asia
