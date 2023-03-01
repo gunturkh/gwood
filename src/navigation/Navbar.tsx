@@ -49,31 +49,31 @@ function Navbar() {
             </svg>
           </label>
           <div className="dropdown-content card-body text-center bg-accent-content w-40 p-2 mr-[-25px] rounded-b-xl">
-            <Link href="/" className="my-4">
-              <div className="hover:bg-[#820100] mx-[10px] py-2 hover:text-white hover:font-semibold font-medium rounded-xl">
+            <div className="hover:bg-[#820100] mx-[10px] py-2 hover:text-white hover:font-semibold font-medium rounded-xl">
+              <Link href="/" className="my-4">
                 Home
-              </div>
-            </Link>
-            <Link href="/about" className="my-4">
-              <div className="hover:bg-[#820100] mx-[10px] py-2 hover:text-white hover:font-semibold font-medium rounded-xl">
+              </Link>
+            </div>
+            <div className="hover:bg-[#820100] mx-[10px] py-2 hover:text-white hover:font-semibold font-medium rounded-xl">
+              <Link href="/about" className="my-4">
                 About Us
-              </div>
-            </Link>
-            <Link href="/capabilities" className="my-4">
-              <div className="hover:bg-[#820100] mx-[10px] py-2 hover:text-white hover:font-semibold font-medium rounded-xl">
+              </Link>
+            </div>
+            <div className="hover:bg-[#820100] mx-[10px] py-2 hover:text-white hover:font-semibold font-medium rounded-xl">
+              <Link href="/capabilities" className="my-4">
                 Capabilities
-              </div>
-            </Link>
-            <Link href="/companies" className="my-4">
-              <div className="hover:bg-[#820100] mx-[10px] py-2 hover:text-white hover:font-semibold font-medium rounded-xl">
+              </Link>
+            </div>
+            <div className="hover:bg-[#820100] mx-[10px] py-2 hover:text-white hover:font-semibold font-medium rounded-xl">
+              <Link href="/companies" className="my-4">
                 Companies
-              </div>
-            </Link>
-            <Link href="/contacts" className="my-4">
-              <div className="hover:bg-[#820100] mx-[10px] py-2 hover:text-white hover:font-semibold font-medium rounded-xl">
+              </Link>
+            </div>
+            <div className="hover:bg-[#820100] mx-[10px] py-2 hover:text-white hover:font-semibold font-medium rounded-xl">
+              <Link href="/contacts" className="my-4">
                 Contacts
-              </div>
-            </Link>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

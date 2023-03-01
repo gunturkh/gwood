@@ -65,6 +65,7 @@ const Base = () => {
         height: '100vh',
       }}
     >
+      <Navbar />
       <Meta title={AppConfig.title} description={AppConfig.description} />
       <div className="fixed w-[72px] h-[636px] bg-[#820100] top-[150px] flex flex-col justify-evenly py-10 rounded-tr-3xl rounded-br-3xl shadow z-50">
         <a
@@ -115,7 +116,6 @@ const Base = () => {
       <SizeMe monitorHeight>
         {({ size: { width } }) => (
           <>
-            <Navbar />
             <Globe
               ref={globeEl}
               onGlobeReady={() => {
