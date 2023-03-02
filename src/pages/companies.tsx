@@ -31,54 +31,64 @@ function Companies() {
         );
       case 1:
         return (
-          <Image
-            // layout="fixed"
-            src={sgp}
-            alt="Gwood Supply & Distribution (Pte.) Ltd"
-            className="w-[300px]"
-            // style={{ marginTop: 120 }}
-          />
+          <div className="w-[600px] h-full">
+            <Image
+              layout="responsive"
+              src={sgp}
+              alt="Gwood Supply & Distribution (Pte.) Ltd"
+              width={536}
+              height={620}
+            />
+          </div>
         );
       case 2:
         return (
-          <Image
-            // layout="fixed"
-            src={aus}
-            alt="Goodwood Communicators Pty Ltd"
-            className="w-[300px]"
-            // style={{ marginTop: 120 }}
-          />
+          <div className="w-[600px] h-full">
+            <Image
+              layout="responsive"
+              src={aus}
+              alt="Goodwood Communicators Pty Ltd"
+              width={536}
+              height={620}
+            />
+          </div>
         );
       case 3:
         return (
-          <Image
-            // layout="fixed"
-            src={btm}
-            alt="PT Gwood Indonesia (Batam)"
-            className="w-[300px]"
-            // style={{ marginTop: 120 }}
-          />
+          <div className="w-[600px] h-full">
+            <Image
+              layout="responsive"
+              src={btm}
+              alt="PT Gwood Indonesia (Batam)"
+              width={536}
+              height={620}
+            />
+          </div>
         );
       case 4:
         return (
-          <Image
-            // layout="fixed"
-            src={jkt}
-            alt="PT Gwood Indonesia (Jakarta)"
-            className="w-[300px]"
-            // style={{ marginTop: 120 }}
-          />
+          <div className="w-[600px] h-full">
+            <Image
+              layout="responsive"
+              src={jkt}
+              alt="PT Gwood Indonesia (Jakarta)"
+              width={536}
+              height={620}
+            />
+          </div>
         );
 
       default:
         return (
-          <Image
-            // layout="fixed"
-            src={main}
-            alt="Company Main"
-            className="w-[300px]"
-            // style={{ marginTop: 120 }}
-          />
+          <div className="w-[600px] h-full">
+            <Image
+              layout="responsive"
+              src={main}
+              alt="Company Main"
+              width={536}
+              height={620}
+            />
+          </div>
         );
     }
   };
