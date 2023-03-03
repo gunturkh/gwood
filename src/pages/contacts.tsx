@@ -16,6 +16,7 @@ function Contacts() {
   const cardImage = (item: any, idx: number) => {
     let img;
     let text;
+    let link;
     switch (idx) {
       case 0:
         img = (
@@ -27,7 +28,8 @@ function Contacts() {
             style={{ marginBottom: 40 }}
           />
         );
-        text = <p className="text-sm text-[#6975E1]">+65 8139 0383</p>;
+        text = <p className="text-xl text-[#6975E1]">+65 8139 0383</p>;
+        link = 'https://wa.me/+6581390383';
         break;
       case 1:
         img = (
@@ -39,7 +41,8 @@ function Contacts() {
             style={{ marginBottom: 40 }}
           />
         );
-        text = <p className="text-sm text-[#6975E1]">SEND EMAIL</p>;
+        text = <p className="text-xl text-[#6975E1]">SEND EMAIL</p>;
+        link = 'mailto:commercial_admin@gwoodasia.com';
         break;
       case 2:
         img = (
@@ -51,7 +54,8 @@ function Contacts() {
             style={{ marginBottom: 40 }}
           />
         );
-        text = <p className="text-sm text-[#6975E1]">LINKEDIN</p>;
+        text = <p className="text-xl text-[#6975E1]">LINKEDIN</p>;
+        link = 'https://www.linkedin.com/in/gwood-asia-92493787';
         break;
       case 3:
         img = (
@@ -63,7 +67,8 @@ function Contacts() {
             style={{ marginBottom: 40 }}
           />
         );
-        text = <p className="text-sm text-[#6975E1]">FACEBOOK</p>;
+        text = <p className="text-xl text-[#6975E1]">FACEBOOK</p>;
+        link = 'https://www.facebook.com/gwood.asia.9';
         break;
       default:
         img = <></>;
@@ -71,11 +76,16 @@ function Contacts() {
     }
 
     return (
-      <>
+      <a
+        href={link}
+        target="_blank"
+        rel="noreferrer"
+        className="w-[300px] h-[300px] p-4 rounded-3xl shadow-lg gap-4 m-4 flex flex-col items-center justify-around"
+      >
         {img}
         <p className="text-xl text-black">{item}</p>
         {text}
-      </>
+      </a>
     );
   };
   return (
@@ -91,7 +101,7 @@ function Contacts() {
         }}
         className="flex justify-center items-center"
       >
-        <h1 className="font-Manrope text-[80px] text-white">
+        <h1 className="font-Manrope text-[20px] lg:text-[80px] text-white">
           HOW CAN WE HELP YOU?
         </h1>
       </div>
@@ -100,22 +110,12 @@ function Contacts() {
           {['CALL US', 'EMAIL US', 'SOCIAL MEDIA', 'SOCIAL MEDIA'].map(
             (item: any, key: number) => {
               return (
-                <div key={`contact-item-${key}`}>
-                  <div className="w-[300px] h-[300px] p-4 rounded-3xl shadow-lg gap-4 m-4 flex flex-col items-center">
-                    {cardImage(item, key)}
-                  </div>
-                </div>
+                <div key={`contact-item-${key}`}>{cardImage(item, key)}</div>
               );
             }
           )}
         </div>
-        <Image
-          layout="fixed"
-          src={divider}
-          alt="divider"
-          className="w-full"
-          style={{ marginBottom: 10 }}
-        />
+        <img src={divider.src} alt="divider" className="w-full mb-10 w-64" />
         <Image
           // layout="fixed"
           src={map}

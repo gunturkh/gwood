@@ -38,6 +38,8 @@ export const Footer = () => {
             <a
               href="mailto:commercial_admin@gwoodasia.com"
               className="font-thin link link-hover"
+              target="_blank"
+              rel="noreferrer"
             >
               commercial_admin@gwoodasia.com
             </a>
