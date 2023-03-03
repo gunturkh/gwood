@@ -27,7 +27,7 @@ function About() {
         }}
       >
         <div
-          className="h-[500px] lg:h-screen w-full flex flex-col items-center text-white"
+          className="h-[500px] md:h-screen w-full flex flex-col items-center text-white"
           style={{
             backgroundImage: `url(${overlay.src})`,
             backgroundSize: 'cover',
@@ -39,7 +39,7 @@ function About() {
             <h1 className="text-center lg:text-[80px] font-semibold mt-0 lg:mt-32">
               Global Supply - Local Delivery!
             </h1>
-            <div className="w-full flex justify-center mt-84 animate-bounce">
+            <div className="w-full flex justify-center mt-[12rem] animate-bounce">
               <Image
                 layout="fixed"
                 src={arrow}
