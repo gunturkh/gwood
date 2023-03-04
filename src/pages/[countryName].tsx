@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-import Image from 'next/image';
 import { useRouter } from 'next/router';
 
 import australia1 from '../../public/assets/images/au-1.png';
@@ -90,14 +89,12 @@ function About() {
       if (tabIndex === 0) {
         innerContent = (
           <>
-            <Image
-              height={500}
-              layout="fixed"
-              src={australia1}
+            <img
+              src={australia1.src}
               alt="Engineering Service"
-              className="w-full"
+              className="w-auto max-h-[500px]"
             />
-            <div className="flex flex-col px-8 font-Inter text-black justify-center gap-y-8">
+            <div className="flex flex-col px-8 font-Inter text-black justify-center gap-y-8 mt-8">
               <p>Export of quality assurred products, spare parts and </p>
               <p>engineering fabrication all complient to Australian</p>
               <p>{'Standards Association (ASA):'}</p>
@@ -113,27 +110,23 @@ function About() {
       if (tabIndex === 1) {
         innerContent = (
           <>
-            <Image
+            <img
               height={500}
-              layout="fixed"
-              src={australia2}
+              src={australia2.src}
               alt="Document Licenses"
-              className="w-full"
+              className="w-auto max-h-[500px]"
             />
             <div className="flex flex-col px-8 font-Inter text-black justify-start gap-y-8">
               <div className="inline-flex items-center mt-20">
-                <Image
-                  src={PdfLogo}
+                <img
+                  src={PdfLogo.src}
                   alt="logo"
-                  width={54}
-                  height={56}
-                  style={{ width: '54px', height: 'auto' }}
+                  className="w-[54px] h-[56px]"
                 />
                 <a
-                  href="https://gwoodasia.com/doc/Gwood_certificate_of_registration.pdf"
-                  target="_blank"
+                  href="Gwood_certificate_of_registration.pdf"
                   className="text-black ml-4"
-                  rel="noreferrer"
+                  download
                 >
                   Australia Company Registered Documents.pdf
                 </a>
@@ -147,14 +140,12 @@ function About() {
       if (tabIndex === 0) {
         innerContent = (
           <>
-            <Image
-              height={500}
-              layout="fixed"
-              src={indonesia1}
+            <img
+              src={indonesia1.src}
               alt="Engineering Service"
-              className="w-full"
+              className="w-auto max-h-[500px]"
             />
-            <div className="flex flex-col px-8 font-Inter text-black justify-center gap-y-8">
+            <div className="flex flex-col px-8 font-Inter text-black justify-center gap-y-8 mt-8">
               <p>Technical engineering support for remote and on-site </p>
               <p>projects.</p>
               <div className="flex flex-col ml-8 gap-y-8">
@@ -169,14 +160,12 @@ function About() {
       if (tabIndex === 1) {
         innerContent = (
           <>
-            <Image
-              height={500}
-              layout="fixed"
-              src={indonesia2}
+            <img
+              src={indonesia2.src}
               alt="Sub Contract Support"
-              className="w-full"
+              className="w-auto max-h-[500px]"
             />
-            <div className="flex flex-col px-8 font-Inter text-black justify-center gap-y-8">
+            <div className="flex flex-col px-8 font-Inter text-black justify-center gap-y-8 mt-8">
               <p>Support facilitation for EPCM project development</p>
               <div className="flex flex-col ml-8 gap-y-8">
                 <p>1. Project Administration</p>
@@ -190,14 +179,12 @@ function About() {
       if (tabIndex === 2) {
         innerContent = (
           <>
-            <Image
-              height={500}
-              layout="fixed"
-              src={indonesia3}
+            <img
+              src={indonesia3.src}
               alt="Global Procurement Sourcing"
-              className="w-full"
+              className="w-auto max-h-[500px]"
             />
-            <div className="flex flex-col px-8 font-Inter text-black justify-center gap-y-8">
+            <div className="flex flex-col px-8 font-Inter text-black justify-center gap-y-8 mt-8">
               <p>Our Gwood Asia regional network provides timely </p>
               <p>procurement and logistical support for in-country clients</p>
               <p>within Indonesia:</p>
@@ -213,36 +200,30 @@ function About() {
       if (tabIndex === 3) {
         innerContent = (
           <>
-            <Image
-              height={500}
-              layout="fixed"
-              src={indonesia4}
+            <img
+              src={indonesia4.src}
               alt="Document Licenses"
-              className="w-full"
+              className="w-auto max-h-[500px]"
             />
             <div className="flex flex-col px-8 font-Inter text-black justify-start gap-y-8">
-              <div className="inline-flex items-center mt-20">
-                <Image
-                  src={PdfLogo}
+              <div className="inline-flex items-center mt-20 flex-wrap">
+                <img
+                  src={PdfLogo.src}
                   alt="logo"
-                  width={54}
-                  height={56}
-                  style={{ width: '54px', height: 'auto' }}
+                  className="w-[54px] h-[56px]"
                 />
-                <div className="flex flex-col justify-start">
+                <div className="flex flex-col justify-start mt-4">
                   <a
-                    href="https://gwoodasia.com/Batam_SIUP_2018.pdf"
-                    target="_blank"
+                    href="Batam_SIUP_2018.pdf"
                     className="text-black ml-4 mb-4"
-                    rel="noreferrer"
+                    download
                   >
                     Batam Company Registered Documents.pdf
                   </a>
                   <a
-                    href="https://gwoodasia.com/doc/Surat_Keterangan_Domisili_Jkt_2.pdf"
-                    target="_blank"
+                    href="Surat_Keterangan_Domisili_Jkt_2.pdf"
                     className="text-black ml-4"
-                    rel="noreferrer"
+                    download
                   >
                     Jakarta Company Registered Documents.pdf
                   </a>
@@ -257,14 +238,12 @@ function About() {
       if (tabIndex === 0) {
         innerContent = (
           <>
-            <Image
-              height={500}
-              layout="fixed"
-              src={singapore1}
+            <img
+              src={singapore1.src}
               alt="Regional Trade Center"
-              className="w-full"
+              className="w-auto max-h-[500px]"
             />
-            <div className="flex flex-col px-8 font-Inter text-black justify-center gap-y-8">
+            <div className="flex flex-col px-8 font-Inter text-black justify-center gap-y-8 mt-8">
               <p>Singapore offers multinational product representation,</p>
               <p>legal assurance and banking flexibility, our trade office </p>
               <p>supports:</p>
@@ -280,14 +259,12 @@ function About() {
       if (tabIndex === 1) {
         innerContent = (
           <>
-            <Image
-              height={500}
-              layout="fixed"
-              src={singapore2}
+            <img
+              src={singapore2.src}
               alt="Out-Sourced Procurement"
-              className="w-full"
+              className="w-auto max-h-[500px]"
             />
-            <div className="flex flex-col px-8 font-Inter text-black justify-center gap-y-8">
+            <div className="flex flex-col px-8 font-Inter text-black justify-center gap-y-8 mt-8">
               <p>Gwood provides access to global purchase of parts, </p>
               <p>equipment and services, through mutual agreements and</p>
               <p>binding negotiations for:</p>
@@ -303,14 +280,12 @@ function About() {
       if (tabIndex === 2) {
         innerContent = (
           <>
-            <Image
-              height={500}
-              layout="fixed"
-              src={singapore3}
+            <img
+              src={singapore3.src}
               alt="Bulk Material Supply"
-              className="w-full"
+              className="w-auto max-h-[500px]"
             />
-            <div className="flex flex-col px-8 font-Inter text-black justify-center gap-y-8">
+            <div className="flex flex-col px-8 font-Inter text-black justify-center gap-y-8 mt-8">
               <p>Facilitating a secure platform for international shipments </p>
               <p>of contracted and project material for:</p>
               <div className="flex flex-col ml-8 gap-y-8">
@@ -325,25 +300,20 @@ function About() {
       if (tabIndex === 3) {
         innerContent = (
           <>
-            <Image
-              height={500}
-              layout="fixed"
-              src={singapore4}
+            <img
+              src={singapore4.src}
               alt="Document Licenses"
-              className="w-full"
+              className="w-auto max-h-[500px]"
             />
-            <div className="flex flex-col px-8 font-Inter text-black justify-start gap-y-8">
+            <div className="flex flex-col px-8 font-Inter text-black justify-start gap-y-8 mt-8">
               <div className="inline-flex items-center mt-20">
-                <Image
-                  src={PdfLogo}
+                <img
+                  src={PdfLogo.src}
                   alt="logo"
-                  width={54}
-                  height={56}
-                  style={{ width: '54px', height: 'auto' }}
+                  className="w-[54px] h-[56px]"
                 />
                 <a
-                  href="https://gwoodasia.com/doc/SGP_Reg.pdf"
-                  target="_blank"
+                  href="SGP_Reg.pdf"
                   className="text-black ml-4"
                   rel="noreferrer"
                 >
@@ -356,7 +326,7 @@ function About() {
       }
     }
     return (
-      <div className="h-full bg-white/80 flex flex-1 justify-center flex-row p-10">
+      <div className="h-full bg-white/80 flex flex-1 justify-center flex-row p-10 flex-wrap">
         {innerContent}
       </div>
     );
@@ -378,7 +348,7 @@ function About() {
             {title(countryName as string)}
           </h1>
         </div>
-        <div className="flex flex-row justify-around font-Inter font-semibold px-40 gap-x-4 lg:gap-x-10">
+        <div className="flex flex-row justify-center font-Inter font-semibold px-40 gap-x-4 lg:gap-x-10">
           {tabs(countryName as string)?.map((tab, tabIndex) => {
             return (
               <button
