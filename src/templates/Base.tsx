@@ -3,7 +3,6 @@
 /* eslint-disable @typescript-eslint/naming-convention */
 import { useRef, useState } from 'react';
 
-import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { GlobeMethods } from 'react-globe.gl';
 import { SizeMe } from 'react-sizeme';
@@ -67,17 +66,16 @@ const Base = () => {
     >
       <Navbar />
       <Meta title={AppConfig.title} description={AppConfig.description} />
-      <div className="fixed w-[72px] h-[636px] bg-[#820100] top-[150px] flex flex-col justify-evenly py-10 rounded-tr-3xl rounded-br-3xl shadow z-50">
+      <div className="fixed max-h-[100vh] w-[40px] h-[200px] md:w-[72px] md:h-[636px] bg-[#820100] top-[150px] flex flex-col justify-evenly py-10 rounded-tr-3xl rounded-br-3xl shadow z-50">
         <a
           href="https://www.facebook.com/gwood.asia.9/"
           target="_blank"
           rel="noreferrer"
         >
-          <Image
+          <img
             src={'/assets/images/fb.svg'}
             alt="Facebook"
-            height={80}
-            width={80}
+            className="w-[40px] h-[40px] md:w-[80px] md:h-[80px]"
           />
         </a>
         <a
@@ -85,11 +83,10 @@ const Base = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <Image
+          <img
             src={'/assets/images/linkedin.svg'}
             alt="LinkedIn"
-            height={80}
-            width={80}
+            className="w-[40px] h-[40px] md:w-[80px] md:h-[80px]"
           />
         </a>
         <a
@@ -97,25 +94,30 @@ const Base = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <Image
+          <img
             src={'/assets/images/email.svg'}
             alt="Email"
-            height={80}
-            width={80}
+            className="w-[40px] h-[40px] md:w-[80px] md:h-[80px]"
           />
         </a>
         <a href="https://wa.me/+6581390383" target="_blank" rel="noreferrer">
-          <Image
+          <img
             src={'/assets/images/wa.svg'}
             alt="Whatsapp"
-            height={80}
-            width={80}
+            className="w-[40px] h-[40px] md:w-[80px] md:h-[80px]"
           />
         </a>
       </div>
-      <SizeMe monitorHeight>
+      {/* @ts-ignore */}
+      <SizeMe monitorHeight monitorWidth>
         {({ size: { width } }) => (
-          <>
+          <div
+            style={{
+              marginLeft: (width as number) <= 400 ? 50 : 0,
+              marginTop: (width as number) <= 400 ? 100 : 0,
+            }}
+          >
+            {/* <div>{`width: ${width} & height: ${height}`}</div> */}
             <Globe
               ref={globeEl}
               onGlobeReady={() => {
@@ -130,6 +132,11 @@ const Base = () => {
               }}
               globeImageUrl="//unpkg.com/three-globe/example/img/earth-blue-marble.jpg"
               width={width as number}
+              height={
+                (width as number) / (4 / 3) >= 700
+                  ? 700
+                  : (width as number) / (4 / 3)
+              }
               backgroundColor="rgba(0,0,0,0)"
               htmlElementsData={places}
               htmlElement={(d: any) => {
@@ -149,7 +156,7 @@ const Base = () => {
                 return el;
               }}
             />
-          </>
+          </div>
         )}
       </SizeMe>
     </div>

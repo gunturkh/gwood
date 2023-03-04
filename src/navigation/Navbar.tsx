@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
@@ -11,16 +10,14 @@ function Navbar() {
   return (
     <div className="navbar bg-accent-content px-10">
       <div className="navbar-start">
-        <Image
-          src={GWoodLogo}
+        <img
+          src={GWoodLogo.src}
           alt="logo"
-          height={63}
-          width={60}
           onClick={() => router.push('/')}
-          className="cursor-pointer"
+          className="cursor-pointer w-[30px] h-[33px] sm:w-[60px] sm:h-[63px]"
         />
         <a
-          className="btn btn-ghost normal-case text-2xl  "
+          className="btn btn-ghost normal-case text-base sm:text-2xl  "
           href={'/'}
           style={{ color: '#151206' }}
         >
