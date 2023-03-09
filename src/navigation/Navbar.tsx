@@ -8,7 +8,7 @@ import GWoodLogo from '../../public/assets/images/logo.png';
 function Navbar() {
   const router = useRouter();
   return (
-    <div className="navbar bg-accent-content px-10">
+    <div className="navbar bg-accent-content px-10 fixed top-0 z-50">
       <div className="navbar-start">
         <img
           src={GWoodLogo.src}

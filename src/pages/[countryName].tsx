@@ -24,16 +24,22 @@ function About() {
   const { countryName } = router.query;
   const [selectedTab, setSelectedTab] = useState(0);
   const countryBg = (country: string) => {
+    let bg;
     switch (country) {
       case 'singapore':
-        return `url(${singapore.src})`;
+        bg = `url(${singapore.src})`;
+        break;
       case 'australia':
-        return `url(${australia.src})`;
+        bg = `url(${australia.src})`;
+        break;
       case 'indonesia':
-        return `url(${indonesia.src})`;
+        bg = `url(${indonesia.src})`;
+        break;
       default:
-        return `url(${singapore.src})`;
+        bg = `url(${singapore.src})`;
+        break;
     }
+    return `linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), ${bg}`;
   };
 
   const title = (country: string) => {
@@ -334,7 +340,7 @@ function About() {
   return (
     <div
       style={{
-        backgroundImage: countryBg(countryName as string),
+        background: countryBg(countryName as string),
         backgroundSize: 'cover',
         width: '100vw',
         height: '100%',
@@ -342,9 +348,9 @@ function About() {
       }}
     >
       <Navbar />
-      <div className="flex flex-col">
+      <div className="flex flex-col relative top-[64px]">
         <div className="h-[50vh] flex">
-          <h1 className="lg:px-80 px:20 text-center text-white text-[20px] md:text-[45px] font-light flex flex-1 justify-center items-center font-Lato">
+          <h1 className="lg:px-80 px:20 text-center text-white text-[20px] md:text-[45px] font-normal flex flex-1 justify-center items-center font-Lato">
             {title(countryName as string)}
           </h1>
         </div>

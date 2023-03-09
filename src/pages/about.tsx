@@ -17,7 +17,7 @@ function About() {
     <>
       <Navbar />
       <div
-        className="h-[200vh] flex flex-row flex-wrap bg-accent-content py-32 px-16"
+        className="h-[200vh] flex flex-row flex-wrap bg-accent-content md:py-32 md:px-16 px-8 py-4 relative top-[64px]"
         style={{
           backgroundImage: `url(${bg.src})`,
           backgroundSize: 'cover',
@@ -35,8 +35,8 @@ function About() {
             height: '100%',
           }}
         >
-          <div className="h-[500px] lg:h-screen">
-            <h1 className="text-center lg:text-[80px] font-semibold mt-0 lg:mt-32">
+          <div className="h-[735px] md:h-screen">
+            <h1 className="text-center lg:text-[80px] font-semibold mt-8 lg:mt-32">
               Global Supply - Local Delivery!
             </h1>
             <div className="w-full flex justify-center mt-[12rem] animate-bounce">
@@ -49,8 +49,8 @@ function About() {
               />
             </div>
           </div>
-          <div className="h-[500px] lg:h-screen text-[12px] sm:text-[30px] lg:text-[50px] font-thin text-left">
-            <div className="flex flex-row flex-wrap w-full justify-center items-center">
+          <div className="h-[300px] md:h-screen text-[12px] sm:text-[20px] lg:text-[40px] font-thin text-left relative -left-[50px]">
+            <div className="flex flex-row  w-full justify-center items-center">
               <div className="max-w-[50vw] p-4 lg:p-20 mb-16 ">
                 <p>
                   Originally founded in 1997, the goals and objectives of the
@@ -59,42 +59,42 @@ function About() {
                 </p>
               </div>
               <div
-                className={`w-[113px] h-[150px] sm:w-[376px] sm:h-[500px] relative group`}
+                className={`w-[113px] h-[150px] lg:w-[551px] lg:h-[735px] relative group`}
               >
                 <div
-                  className={`w-[113px] h-[150px] sm:w-[376px] sm:h-[500px] ease-in duration-100 border border-purple-500 rounded-3xl backdrop-blur-sm bg-white/30 group-hover:bg-purple-300/30 hover:from-purple-300 relative`}
+                  className={`w-[113px] h-[150px] lg:w-[551px] lg:h-[735px] ease-in duration-100 border border-purple-500 rounded-3xl backdrop-blur-sm bg-white/30 group-hover:bg-purple-300/30 hover:from-purple-300 relative`}
                 ></div>
                 <div
-                  className={`absolute w-[113px] h-[150px] sm:w-[376px] sm:h-[500px] sm:-top-[60px] sm:-right-[80px] -top-[20px] -right-[30px]`}
+                  className={`absolute w-[113px] h-[150px] lg:w-[551px] lg:h-[735px] lg:-top-[60px] lg:-right-[80px] -top-[20px] -right-[30px]`}
                 >
                   <img
                     src={about1.src}
                     alt="Image 1"
-                    className={`w-[113px] h-[150px] sm:w-[376px] sm:h-[500px]`}
+                    className={`w-[113px] h-[150px] lg:w-[551px] lg:h-[735px]`}
                   />
                 </div>
               </div>
             </div>
           </div>
-          <div className="h-[500px] lg:h-screen text-[12px] sm:text-[30px] lg:text-[50px] font-thin text-left mt-8 lg:mt-24">
-            <div className="flex flex-row flex-wrap w-full justify-center items-center">
+          <div className="h-[300px] lg:h-screen text-[12px] sm:text-[20px] lg:text-[40px] font-thin text-left mt-8 lg:mt-[50vh] relative left-[50px]">
+            <div className="flex flex-row flex-wrap w-full items-center">
               <div
-                className={`w-[113px] h-[150px] sm:w-[376px] sm:h-[500px] relative group mr-10`}
+                className={`w-[113px] h-[150px] lg:w-[551px] lg:h-[735px] relative group mr-4`}
               >
                 <div
-                  className={`w-[113px] h-[150px] sm:w-[376px] sm:h-[500px] ease-in duration-100 border border-purple-500 rounded-3xl backdrop-blur-sm bg-white/30 group-hover:bg-purple-300/30 hover:from-purple-300 relative`}
+                  className={`w-[113px] h-[150px] lg:w-[542px] lg:h-[722px] ease-in duration-100 border border-purple-500 rounded-3xl backdrop-blur-sm bg-white/30 group-hover:bg-purple-300/30 hover:from-purple-300 relative`}
                 ></div>
                 <div
-                  className={`absolute w-[113px] h-[150px] sm:w-[376px] sm:h-[500px] sm:-top-[60px] sm:-left-[80px] -top-[20px] -left-[30px]`}
+                  className={`absolute w-[113px] h-[150px] lg:w-[542px] lg:h-[722px] lg:-top-[60px] lg:-left-[80px] -top-[20px] -left-[30px]`}
                 >
                   <img
                     src={about2.src}
                     alt="Image 2"
-                    className={`w-[113px] h-[150px] sm:w-[376px] sm:h-[500px]`}
+                    className={`w-[113px] h-[150px] lg:w-[542px] lg:h-[722px]`}
                   />
                 </div>
               </div>
-              <div className="max-w-[50vw] p-4 lg:p-20 mb-16 ">
+              <div className="max-w-[50vw] p-4 lg:p-1 mb-16 ">
                 <p>
                   Our independently registered businesses in Singapore,
                   Indonesia & Australia together with our S.E. Asia Regional
@@ -104,7 +104,7 @@ function About() {
               </div>
             </div>
           </div>
-          <div className="h-[500px] lg:h-screen text-[12px] sm:text-[30px] lg:text-[50px] font-thin text-left mt-8 lg:mt-24">
+          <div className="h-[300px] lg:h-screen text-[12px] sm:text-[20px] lg:text-[40px] font-thin text-left mt-8 lg:mt-[50vh]">
             <div className="flex flex-row flex-wrap w-full justify-center items-center">
               <div className="max-w-[50vw] p-4 lg:p-20 mb-16 ">
                 <p>The Gwood Asia focus is to</p>
@@ -115,24 +115,24 @@ function About() {
                 </ul>
               </div>
               <div
-                className={`w-[135px] h-[150px] sm:w-[450px] sm:h-[500px] relative group`}
+                className={`w-[135px] h-[150px] lg:w-[542px] lg:h-[722px] relative group right-0 lg:right-[50px]`}
               >
                 <div
-                  className={`w-[135px] h-[150px] sm:w-[450px] sm:h-[500px] ease-in duration-100 border border-purple-500 rounded-3xl backdrop-blur-sm bg-white/30 group-hover:bg-purple-300/30 hover:from-purple-300 relative`}
+                  className={`w-[135px] h-[150px] lg:w-[600px] lg:h-[732px] ease-in duration-100 border border-purple-500 rounded-3xl backdrop-blur-sm bg-white/30 group-hover:bg-purple-300/30 hover:from-purple-300 relative`}
                 ></div>
                 <div
-                  className={`absolute w-[135px] h-[150px] sm:w-[450px] sm:h-[500px] sm:-top-[60px] sm:-right-[40px] -top-[20px] -right-[12px]`}
+                  className={`absolute w-[135px] h-[150px] lg:w-[450px] lg:h-[500px] lg:-top-[60px] lg:right-[10px] -top-[20px] -right-[12px]`}
                 >
                   <img
                     src={about3.src}
                     alt="Image 3"
-                    className={`w-[113px] h-[150px] sm:w-[376px] sm:h-[500px]`}
+                    className={`w-[113px] h-[150px] lg:w-[542px] lg:h-[722px]`}
                   />
                 </div>
               </div>
             </div>
           </div>
-          <div className="h-[500px] lg:h-screen text-[12px] sm:text-[30px] lg:text-[50px] font-thin text-left mt-8 lg:mt-24">
+          <div className="h-[300px] lg:h-screen text-[12px] sm:text-[20px] lg:text-[40px] font-thin text-left mt-8 lg:mt-[50vh]">
             <div className="flex flex-row flex-wrap w-full justify-center items-center">
               <div className="max-w-[50vw] p-4 lg:p-20 mb-16 ">
                 <p>
@@ -142,18 +142,18 @@ function About() {
                 </p>
               </div>
               <div
-                className={`w-[113px] h-[150px] sm:w-[376px] sm:h-[500px] relative group`}
+                className={`w-[113px] h-[150px] lg:w-[542px] lg:h-[722px] relative group right-0 lg:right-[50px]`}
               >
                 <div
-                  className={`w-[113px] h-[150px] sm:w-[376px] sm:h-[500px] ease-in duration-100 border border-purple-500 rounded-3xl backdrop-blur-sm bg-white/30 group-hover:bg-purple-300/30 hover:from-purple-300 relative`}
+                  className={`w-[113px] h-[150px] lg:w-[542px] lg:h-[722px] ease-in duration-100 border border-purple-500 rounded-3xl backdrop-blur-sm bg-white/30 group-hover:bg-purple-300/30 hover:from-purple-300 relative`}
                 ></div>
                 <div
-                  className={`absolute w-[113px] h-[150px] sm:w-[376px] sm:h-[500px] sm:-top-[60px] sm:-right-[80px] -top-[20px] -right-[30px]`}
+                  className={`absolute w-[113px] h-[150px] lg:w-[542px] lg:h-[722px] lg:-top-[60px] lg:-right-[80px] -top-[20px] -right-[30px]`}
                 >
                   <img
                     src={about4.src}
                     alt="Image 4"
-                    className={`w-[113px] h-[150px] sm:w-[376px] sm:h-[500px]`}
+                    className={`w-[113px] h-[150px] lg:w-[542px] lg:h-[722px]`}
                   />
                 </div>
               </div>

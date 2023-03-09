@@ -105,7 +105,7 @@ function Contacts() {
           HOW CAN WE HELP YOU?
         </h1>
       </div>
-      <div className="bg-accent-content flex flex-col items-center justify-center p-24">
+      <div className="bg-accent-content flex flex-col items-center justify-center pl-4 lg:p-12">
         <div className="flex flex-row flex-wrap w-full justify-around mb-8 ">
           {['CALL US', 'EMAIL US', 'SOCIAL MEDIA', 'SOCIAL MEDIA'].map(
             (item: any, key: number) => {
@@ -115,7 +115,7 @@ function Contacts() {
             }
           )}
         </div>
-        <img src={divider.src} alt="divider" className="w-full mb-10 w-64" />
+        <img src={divider.src} alt="divider" className="w-24 mb-10 lg:w-36" />
         <Image
           // layout="fixed"
           src={map}

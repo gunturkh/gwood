@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+import { Transition } from '@headlessui/react';
 import Image from 'next/image';
 import { ImArrowRight2 } from 'react-icons/im';
 
@@ -15,88 +16,11 @@ import Navbar from '../navigation/Navbar';
 function Companies() {
   const [companyIndex, setCompanyIndex] = useState(0);
 
-  const dynamicImage = (index: number) => {
-    switch (index) {
-      case 0:
-        return (
-          <div className="w-[600px] h-full">
-            <Image
-              layout="responsive"
-              src={main}
-              alt="Company Main"
-              width={536}
-              height={620}
-            />
-          </div>
-        );
-      case 1:
-        return (
-          <div className="w-[600px] h-full">
-            <Image
-              layout="responsive"
-              src={sgp}
-              alt="Gwood Supply & Distribution (Pte.) Ltd"
-              width={536}
-              height={620}
-            />
-          </div>
-        );
-      case 2:
-        return (
-          <div className="w-[600px] h-full">
-            <Image
-              layout="responsive"
-              src={aus}
-              alt="Goodwood Communicators Pty Ltd"
-              width={536}
-              height={620}
-            />
-          </div>
-        );
-      case 3:
-        return (
-          <div className="w-[600px] h-full">
-            <Image
-              layout="responsive"
-              src={btm}
-              alt="PT Gwood Indonesia (Batam)"
-              width={536}
-              height={620}
-            />
-          </div>
-        );
-      case 4:
-        return (
-          <div className="w-[600px] h-full">
-            <Image
-              layout="responsive"
-              src={jkt}
-              alt="PT Gwood Indonesia (Jakarta)"
-              width={536}
-              height={620}
-            />
-          </div>
-        );
-
-      default:
-        return (
-          <div className="w-[600px] h-full">
-            <Image
-              layout="responsive"
-              src={main}
-              alt="Company Main"
-              width={536}
-              height={620}
-            />
-          </div>
-        );
-    }
-  };
   return (
     <>
       <Navbar />
       <div
-        className="h-[200vh] flex flex-row flex-wrap bg-accent-content py-32 px-16"
+        className="h-[200vh] flex flex-row flex-wrap bg-accent-content py-32 px-16 relative top-[64px]"
         style={{
           backgroundImage: `url(${bg.src})`,
           backgroundSize: 'cover',
@@ -197,7 +121,125 @@ function Companies() {
             </div>
           </div>
         </div>
-        {dynamicImage(companyIndex)}
+        <Transition
+          show={companyIndex === 0}
+          enter="transition duration-200"
+          enterFrom="opacity-0 scale-150"
+          enterTo="opacity-100 scale-100"
+          leave="transition duration-200"
+          leaveFrom="opacity-100 scale-100"
+          leaveTo="opacity-0 scale-150"
+        >
+          <div className="w-[600px] h-full">
+            <Image
+              layout="responsive"
+              src={main}
+              alt="Company Main"
+              width={536}
+              height={620}
+            />
+          </div>
+        </Transition>
+
+        <Transition
+          show={companyIndex === 1}
+          enter="transition duration-200"
+          enterFrom="opacity-0 scale-150"
+          enterTo="opacity-100 scale-100"
+          leave="transition duration-200"
+          leaveFrom="opacity-100 scale-100"
+          leaveTo="opacity-0 scale-150"
+        >
+          <div className="w-[600px] h-full">
+            <Image
+              layout="responsive"
+              src={sgp}
+              alt="Gwood Supply & Distribution (Pte.) Ltd"
+              width={536}
+              height={620}
+            />
+          </div>
+        </Transition>
+
+        <Transition
+          show={companyIndex === 2}
+          enter="transition duration-200"
+          enterFrom="opacity-0 scale-150"
+          enterTo="opacity-100 scale-100"
+          leave="transition duration-200"
+          leaveFrom="opacity-100 scale-100"
+          leaveTo="opacity-0 scale-150"
+        >
+          <div className="w-[600px] h-full">
+            <Image
+              layout="responsive"
+              src={aus}
+              alt="Goodwood Communicators Pty Ltd"
+              width={536}
+              height={620}
+            />
+          </div>
+        </Transition>
+
+        <Transition
+          show={companyIndex === 3}
+          enter="transition duration-200"
+          enterFrom="opacity-0 scale-150"
+          enterTo="opacity-100 scale-100"
+          leave="transition duration-200"
+          leaveFrom="opacity-100 scale-100"
+          leaveTo="opacity-0 scale-150"
+        >
+          <div className="w-[600px] h-full">
+            <Image
+              layout="responsive"
+              src={btm}
+              alt="PT Gwood Indonesia (Batam)"
+              width={536}
+              height={620}
+            />
+          </div>
+        </Transition>
+
+        <Transition
+          show={companyIndex === 4}
+          enter="transition duration-200"
+          enterFrom="opacity-0 scale-150"
+          enterTo="opacity-100 scale-100"
+          leave="transition duration-200"
+          leaveFrom="opacity-100 scale-100"
+          leaveTo="opacity-0 scale-150"
+        >
+          <div className="w-[600px] h-full">
+            <Image
+              layout="responsive"
+              src={jkt}
+              alt="PT Gwood Indonesia (Jakarta)"
+              width={536}
+              height={620}
+            />
+          </div>
+        </Transition>
+
+        <Transition
+          show={companyIndex === 5}
+          enter="transition duration-200"
+          enterFrom="opacity-0 scale-150"
+          enterTo="opacity-100 scale-100"
+          leave="transition duration-200"
+          leaveFrom="opacity-100 scale-100"
+          leaveTo="opacity-0 scale-150"
+        >
+          <div className="w-[600px] h-full">
+            <Image
+              layout="responsive"
+              src={main}
+              alt="Company Main"
+              width={536}
+              height={620}
+            />
+          </div>
+        </Transition>
       </div>
       <Footer />
     </>
