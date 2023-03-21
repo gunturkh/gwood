@@ -17,8 +17,9 @@ function About() {
     <>
       <Navbar />
       <div
-        className="h-[200vh] flex flex-row flex-wrap bg-accent-content md:py-32 md:px-16 px-8 py-4 relative top-[64px]"
+        className="h-[200vh] flex flex-row flex-wrap md:py-32 md:px-16 px-8 py-4 relative top-[64px]"
         style={{
+          backgroundColor: '#ffffff',
           backgroundImage: `url(${bg.src})`,
           backgroundSize: 'cover',
           backgroundAttachment: 'fixed',

@@ -105,7 +105,10 @@ function Contacts() {
           HOW CAN WE HELP YOU?
         </h1>
       </div>
-      <div className="bg-accent-content flex flex-col items-center justify-center pl-4 lg:p-12">
+      <div
+        className="flex flex-col items-center justify-center pl-4 lg:p-12"
+        style={{ backgroundColor: '#ffffff' }}
+      >
         <div className="flex flex-row flex-wrap w-full justify-around mb-8 ">
           {['CALL US', 'EMAIL US', 'SOCIAL MEDIA', 'SOCIAL MEDIA'].map(
             (item: any, key: number) => {

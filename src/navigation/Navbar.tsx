@@ -8,7 +8,10 @@ import GWoodLogo from '../../public/assets/images/logo.png';
 function Navbar() {
   const router = useRouter();
   return (
-    <div className="navbar bg-accent-content px-10 fixed top-0 z-50">
+    <div
+      className="navbar px-10 fixed top-0 z-50"
+      style={{ backgroundColor: '#ffffff' }}
+    >
       <div className="navbar-start">
         <img
           src={GWoodLogo.src}
@@ -45,7 +48,10 @@ function Navbar() {
               ></path>
             </svg>
           </label>
-          <div className="dropdown-content card-body text-center bg-accent-content w-40 p-2 mr-[-25px] rounded-b-xl">
+          <div
+            className="dropdown-content card-body text-center  w-40 p-2 mr-[-25px] rounded-b-xl"
+            style={{ backgroundColor: '#ffffff' }}
+          >
             <div className="hover:bg-[#820100] mx-[10px] py-2 hover:text-white hover:font-semibold font-medium rounded-xl">
               <Link href="/" className="my-4">
                 Home

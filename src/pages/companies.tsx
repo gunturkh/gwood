@@ -20,8 +20,9 @@ function Companies() {
     <>
       <Navbar />
       <div
-        className="h-[200vh] flex flex-row flex-wrap bg-accent-content py-32 px-16 relative top-[64px]"
+        className="h-[200vh] flex flex-row flex-wrap py-32 px-16 relative top-[64px]"
         style={{
+          backgroundColor: '#ffffff',
           backgroundImage: `url(${bg.src})`,
           backgroundSize: 'cover',
           width: '100vw',

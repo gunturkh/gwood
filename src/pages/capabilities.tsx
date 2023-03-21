@@ -16,7 +16,7 @@ function Capabilities() {
     <>
       <Navbar />
       <div
-        className="h-[200vh] flex flex-row flex-wrap bg-accent-content md:py-32 md:px-16 px-8 py-4 relative top-[64px]"
+        className="h-[200vh] flex flex-row flex-wrap md:py-32 md:px-16 px-8 py-4 relative top-[64px]"
         style={{
           backgroundColor: `#1E2537`,
           backgroundSize: 'cover',
