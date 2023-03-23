@@ -6,7 +6,7 @@ import capabilities1 from '../../public/assets/images/capabilities1.png';
 import capabilities2 from '../../public/assets/images/capabilities2.png';
 import capabilities3 from '../../public/assets/images/capabilities3.png';
 import capabilities4 from '../../public/assets/images/capabilities4.png';
-import overlay from '../../public/assets/images/capabilitiesoverlay.png';
+import overlay from '../../public/assets/images/capabilitiesbg.png';
 import arrow from '../../public/assets/images/scroll-arrow.png';
 import { Footer } from '../footer/MainFooter';
 import Navbar from '../navigation/Navbar';
@@ -18,9 +18,10 @@ function Capabilities() {
       <div
         className="h-[200vh] flex flex-row flex-wrap md:py-32 md:px-16 px-8 py-4 relative top-[64px]"
         style={{
-          backgroundColor: `#1E2537`,
+          backgroundImage: `url(${overlay.src})`,
           backgroundSize: 'cover',
-          backgroundAttachment: 'fixed',
+          // background: 'white',
+          // backgroundAttachment: 'fixed',
           // width: '100vw',
           height: '100%',
         }}
@@ -28,7 +29,7 @@ function Capabilities() {
         <div
           className="h-[500px] lg:h-screen w-full flex flex-col items-center text-white"
           style={{
-            backgroundImage: `url(${overlay.src})`,
+            // backgroundImage: `url(${overlay.src})`,
             backgroundSize: 'cover',
             // width: '100vw',
             height: '100%',
@@ -48,7 +49,7 @@ function Capabilities() {
               />
             </div>
           </div>
-          <div className="h-[300px] md:h-screen text-[12px] sm:text-[20px] lg:text-[40px] font-thin text-left">
+          <div className="h-[300px] md:h-screen text-[12px] sm:text-[20px] lg:text-[40px] font-thin text-left text-black">
             <div className="flex flex-row flex-wrap w-full justify-center items-center">
               <div className="max-w-[50vw] p-4 lg:p-20 mb-16 mr-16 ">
                 <p className="font-semibold ">CONTRACTS</p>
@@ -62,7 +63,7 @@ function Capabilities() {
                 className={`w-[113px] h-[150px] lg:w-[376px] lg:h-[500px] relative group mr-10`}
               >
                 <div
-                  className={`w-[113px] h-[150px] lg:w-[376px] lg:h-[500px] ease-in duration-100 border border-purple-500 rounded-3xl backdrop-blur-sm bg-white/30 group-hover:bg-purple-300/30 hover:from-purple-300 relative`}
+                  className={`gradient-border-mask w-[113px] h-[150px] lg:w-[376px] lg:h-[500px] ease-in duration-100 rounded-3xl backdrop-blur-sm bg-white/30 group-hover:bg-purple-300/30 hover:from-purple-300 relative`}
                 ></div>
                 <div
                   className={`absolute w-[113px] h-[150px] lg:w-[376px] lg:h-[500px] lg:-top-[60px] lg:-left-[80px] -top-[20px] -left-[30px]`}
@@ -76,13 +77,13 @@ function Capabilities() {
               </div>
             </div>
           </div>
-          <div className="h-[500px] lg:h-screen text-[12px] md:text-[20px] lg:text-[40px] font-thin text-left mt-48 lg:mt-[50rem]">
+          <div className="h-[500px] lg:h-screen text-[12px] md:text-[20px] lg:text-[40px] font-thin text-left mt-48 lg:mt-[50rem] text-black">
             <div className="flex flex-row flex-wrap w-full justify-center items-center">
               <div
                 className={`w-[113px] h-[150px] md:w-[376px] md:h-[500px] relative group mr-10`}
               >
                 <div
-                  className={`w-[113px] h-[150px] md:w-[376px] md:h-[500px] ease-in duration-100 border border-purple-500 rounded-3xl backdrop-blur-sm bg-white/30 group-hover:bg-purple-300/30 hover:from-purple-300 relative`}
+                  className={`gradient-border-mask w-[113px] h-[150px] md:w-[376px] md:h-[500px] ease-in duration-100 rounded-3xl backdrop-blur-sm bg-white/30 group-hover:bg-purple-300/30 hover:from-purple-300 relative`}
                 ></div>
                 <div
                   className={`absolute w-[113px] h-[150px] md:w-[376px] md:h-[500px] md:-top-[60px] md:-left-[80px] -top-[20px] -left-[30px]`}
@@ -104,7 +105,7 @@ function Capabilities() {
               </div>
             </div>
           </div>
-          <div className="h-[500px] lg:h-screen text-[12px] md:text-[20px] lg:text-[40px] font-thin text-left mt-8 lg:mt-48">
+          <div className="h-[500px] lg:h-screen text-[12px] md:text-[20px] lg:text-[40px] font-thin text-left mt-8 lg:mt-48 text-black">
             <div className="flex flex-row flex-wrap w-full justify-center items-center">
               <div className="max-w-[50vw] p-4 lg:p-20 mb-16 ">
                 <p className="font-semibold ">COMMERCIAL</p>
@@ -118,7 +119,7 @@ function Capabilities() {
                 className={`w-[113px] h-[150px] md:w-[376px] md:h-[500px] relative group mr-10`}
               >
                 <div
-                  className={`w-[113px] h-[150px] md:w-[376px] md:h-[500px] ease-in duration-100 border border-purple-500 rounded-3xl backdrop-blur-sm bg-white/30 group-hover:bg-purple-300/30 hover:from-purple-300 relative`}
+                  className={`gradient-border-mask w-[113px] h-[150px] md:w-[376px] md:h-[500px] ease-in duration-100 rounded-3xl backdrop-blur-sm bg-white/30 group-hover:bg-purple-300/30 hover:from-purple-300 relative`}
                 ></div>
                 <div
                   className={`absolute w-[113px] h-[150px] md:w-[376px] md:h-[500px] md:-top-[60px] md:-left-[80px] -top-[20px] -left-[30px]`}
@@ -132,13 +133,13 @@ function Capabilities() {
               </div>
             </div>
           </div>
-          <div className="h-[500px] lg:h-screen text-[12px] md:text-[20px] lg:text-[40px] font-thin text-left mt-8 lg:mt-[30rem]">
+          <div className="h-[500px] lg:h-screen text-[12px] md:text-[20px] lg:text-[40px] font-thin text-left mt-8 lg:mt-[30rem] text-black">
             <div className="flex flex-row flex-wrap w-full justify-center items-center">
               <div
                 className={`w-[113px] h-[150px] md:w-[376px] md:h-[500px] relative group mr-10`}
               >
                 <div
-                  className={`w-[113px] h-[150px] md:w-[376px] md:h-[500px] ease-in duration-100 border border-purple-500 rounded-3xl backdrop-blur-sm bg-white/30 group-hover:bg-purple-300/30 hover:from-purple-300 relative`}
+                  className={`gradient-border-mask w-[113px] h-[150px] md:w-[376px] md:h-[500px] ease-in duration-100 rounded-3xl backdrop-blur-sm bg-white/30 group-hover:bg-purple-300/30 hover:from-purple-300 relative`}
                 ></div>
                 <div
                   className={`absolute w-[113px] h-[150px] md:w-[376px] md:h-[500px] md:-top-[60px] md:-right-[80px] -top-[20px] -right-[30px]`}

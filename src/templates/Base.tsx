@@ -123,15 +123,17 @@ const Base = () => {
               ref={globeEl}
               onGlobeReady={() => {
                 const MAP_CENTER = {
-                  lat: -13.3766016,
-                  lng: 127.342919,
+                  lat: -0.665601,
+                  lng: 104.961116,
+                  // lat: -13.3766016,
+                  // lng: 127.342919,
                   altitude: 1.5,
                 };
                 if (globeEl && globeEl.current) {
                   globeEl?.current?.pointOfView(MAP_CENTER, 100);
                 }
               }}
-              globeImageUrl="//unpkg.com/three-globe/example/img/earth-blue-marble.jpg"
+              globeImageUrl="/assets/images/earth.jpeg"
               width={width as number}
               height={
                 (width as number) / (4 / 3) >= 700
@@ -144,10 +146,10 @@ const Base = () => {
                 const el = document.createElement('div');
                 el.innerHTML = `
               <div>
-                <div class='hover:bg-[#820100] hover:text-white bg-[#FAECD6] fixed top-[-15px] left-[-120px] py-2 px-4 font-bold rounded-tl-lg rounded-bl-lg rounded-tr-lg'>${d.city}</div>
+                <div class='hover:bg-[#820100] hover:text-white bg-[#FAECD6] fixed top-[-15px] left-[-120px] py-2 px-4 font-bold rounded-tl-xl rounded-bl-xl rounded-tr-xl'>${d.city}</div>
                 <div>${markerSvg}</div>
               </div>`;
-                el.style.color = '#000';
+                el.style.color = '#001033';
                 el.style.width = `${d.size}px`;
 
                 // @ts-ignore

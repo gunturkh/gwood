@@ -32,6 +32,7 @@ function Navbar() {
         <div
           className="dropdown dropdown-bottom dropdown-end"
           style={{ color: '#151206' }}
+          tabIndex={0}
         >
           <label tabIndex={0} className="btn btn-ghost btn-circle">
             <svg
