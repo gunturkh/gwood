@@ -70,7 +70,7 @@ function About() {
                 className={`w-[113px] h-[150px] lg:w-[551px] lg:h-[735px] relative group`}
               >
                 <div
-                  className={`gradient-border-mask w-[113px] h-[150px] lg:w-[551px] lg:h-[735px] ease-in duration-100 rounded-3xl backdrop-blur-sm bg-white/30 group-hover:bg-purple-300/30 hover:from-purple-300 relative`}
+                  className={`gradient-border-mask w-[113px] h-[150px] lg:w-[551px] lg:h-[735px] ease-in duration-100 rounded-3xl backdrop-blur-sm transition-all bg-white/40 from-white/80 to-white/10 group-hover:bg-white/50 group-hover:bg-gradient-to-br group-hover:from-[#FF6F07]/20 group-hover:via-[#FF6F07]/5 group-hover:to-transparent relative`}
                 ></div>
                 <div
                   className={`absolute w-[113px] h-[150px] lg:w-[551px] lg:h-[735px] lg:-top-[60px] lg:-right-[80px] -top-[20px] -right-[30px]`}
@@ -90,7 +90,7 @@ function About() {
                 className={`w-[113px] h-[150px] lg:w-[551px] lg:h-[735px] relative group mr-4`}
               >
                 <div
-                  className={`gradient-border-mask w-[113px] h-[150px] lg:w-[542px] lg:h-[722px] ease-in duration-100 rounded-3xl backdrop-blur-sm bg-white/30 group-hover:bg-purple-300/30 hover:from-purple-300 relative`}
+                  className={`gradient-border-mask w-[113px] h-[150px] lg:w-[542px] lg:h-[722px] ease-in duration-100 rounded-3xl backdrop-blur-sm transition-all bg-white/40 from-white/80 to-white/10 group-hover:bg-white/50 group-hover:bg-gradient-to-br group-hover:from-[#FF6F07]/20 group-hover:via-[#FF6F07]/5 group-hover:to-transparent relative`}
                 ></div>
                 <div
                   className={`absolute w-[113px] h-[150px] lg:w-[542px] lg:h-[722px] lg:-top-[60px] lg:-left-[80px] -top-[20px] -left-[30px]`}
@@ -126,7 +126,7 @@ function About() {
                 className={`w-[135px] h-[150px] lg:w-[542px] lg:h-[722px] relative group right-0 lg:right-[50px]`}
               >
                 <div
-                  className={`gradient-border-mask w-[135px] h-[150px] lg:w-[600px] lg:h-[732px] ease-in duration-100 rounded-3xl backdrop-blur-sm bg-white/30 group-hover:bg-purple-300/30 hover:from-purple-300 relative`}
+                  className={`gradient-border-mask w-[135px] h-[150px] lg:w-[600px] lg:h-[732px] ease-in duration-100 rounded-3xl backdrop-blur-sm transition-all bg-white/40 from-white/80 to-white/10 group-hover:bg-white/50 group-hover:bg-gradient-to-br group-hover:from-[#FF6F07]/20 group-hover:via-[#FF6F07]/5 group-hover:to-transparent relative`}
                 ></div>
                 <div
                   className={`absolute w-[135px] h-[150px] lg:w-[450px] lg:h-[500px] lg:-top-[60px] lg:right-[10px] -top-[20px] -right-[12px]`}
@@ -153,7 +153,7 @@ function About() {
                 className={`w-[113px] h-[150px] lg:w-[542px] lg:h-[722px] relative group right-0 lg:right-[50px]`}
               >
                 <div
-                  className={`gradient-border-mask w-[113px] h-[150px] lg:w-[542px] lg:h-[722px] ease-in duration-100 rounded-3xl backdrop-blur-sm bg-white/30 group-hover:bg-purple-300/30 hover:from-purple-300 relative`}
+                  className={`gradient-border-mask w-[113px] h-[150px] lg:w-[542px] lg:h-[722px] ease-in duration-100 rounded-3xl backdrop-blur-sm bg-white/40 from-white/80 to-white/10 group-hover:bg-white/50 group-hover:bg-gradient-to-br group-hover:from-[#FF6F07]/20 group-hover:via-[#FF6F07]/5 group-hover:to-transparent relative`}
                 ></div>
                 <div
                   className={`absolute w-[113px] h-[150px] lg:w-[542px] lg:h-[722px] lg:-top-[60px] lg:-right-[80px] -top-[20px] -right-[30px]`}
