@@ -80,7 +80,7 @@ function Contacts() {
         href={link}
         target="_blank"
         rel="noreferrer"
-        className="w-[300px] h-[300px] p-4 rounded-3xl shadow-lg gap-4 m-4 flex flex-col items-center justify-around"
+        className="gradient-border-mask-hover w-[300px] h-[300px] p-4 rounded-3xl shadow-lg gap-4 m-4 flex flex-col items-center justify-around hover:bg-gradient-to-br hover:from-[#FF6F07]/40 hover:via-[#FF6F07]/20 hover:to-white"
       >
         {img}
         <p className="text-xl text-black">{item}</p>

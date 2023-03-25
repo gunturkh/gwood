@@ -33,3 +33,26 @@
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
 }
+
+
+.gradient-border-mask-hover {
+  position: relative;
+  padding: 15px 20px;
+}
+
+.gradient-border-mask-hover:hover:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 1.5rem;
+  border: 2px solid transparent;
+  background: linear-gradient(35deg,#FF6F07,white, white) border-box;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}

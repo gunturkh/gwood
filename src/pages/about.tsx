@@ -7,7 +7,7 @@ import about2 from '../../public/assets/images/about2.png';
 import about3 from '../../public/assets/images/about3.png';
 import about4 from '../../public/assets/images/about4.png';
 import bg from '../../public/assets/images/aboutus.png';
-import overlay from '../../public/assets/images/aboutusoverlay.png';
+import logo from '../../public/assets/images/logo.png';
 import arrow from '../../public/assets/images/scroll-arrow.png';
 import { Footer } from '../footer/MainFooter';
 import Navbar from '../navigation/Navbar';
@@ -22,7 +22,7 @@ function About() {
           backgroundColor: '#ffffff',
           backgroundImage: `url(${bg.src})`,
           backgroundSize: 'cover',
-          backgroundAttachment: 'fixed',
+          // backgroundAttachment: 'fixed',
           // width: '100vw',
           height: '100%',
         }}
@@ -30,16 +30,23 @@ function About() {
         <div
           className="h-[500px] md:h-screen w-full flex flex-col items-center text-white"
           style={{
-            backgroundImage: `url(${overlay.src})`,
-            backgroundSize: 'cover',
+            // backgroundImage: `url(${overlay.src})`,
+            // backgroundSize: 'cover',
             // width: '100vw',
             height: '100%',
           }}
         >
           <div className="h-[735px] md:h-screen">
-            <h1 className="text-center lg:text-[80px] font-semibold mt-8 lg:mt-32">
-              Global Supply - Local Delivery!
-            </h1>
+            <div className="flex">
+              <img
+                src={logo.src}
+                alt="Gwood Logo"
+                className={`w-[121px] h-[131px] lg:w-[326px] lg:h-[352px] mr-8`}
+              />
+              <h1 className="text-center lg:text-[60px] font-semibold mt-8 lg:mt-32 text-[#E0D1B4]">
+                Global Supply - Local Delivery!
+              </h1>
+            </div>
             <div className="w-full flex justify-center mt-[12rem] animate-bounce">
               <Image
                 layout="fixed"
@@ -63,7 +70,7 @@ function About() {
                 className={`w-[113px] h-[150px] lg:w-[551px] lg:h-[735px] relative group`}
               >
                 <div
-                  className={`w-[113px] h-[150px] lg:w-[551px] lg:h-[735px] ease-in duration-100 border border-purple-500 rounded-3xl backdrop-blur-sm bg-white/30 group-hover:bg-purple-300/30 hover:from-purple-300 relative`}
+                  className={`gradient-border-mask w-[113px] h-[150px] lg:w-[551px] lg:h-[735px] ease-in duration-100 rounded-3xl backdrop-blur-sm bg-white/30 group-hover:bg-purple-300/30 hover:from-purple-300 relative`}
                 ></div>
                 <div
                   className={`absolute w-[113px] h-[150px] lg:w-[551px] lg:h-[735px] lg:-top-[60px] lg:-right-[80px] -top-[20px] -right-[30px]`}
@@ -83,7 +90,7 @@ function About() {
                 className={`w-[113px] h-[150px] lg:w-[551px] lg:h-[735px] relative group mr-4`}
               >
                 <div
-                  className={`w-[113px] h-[150px] lg:w-[542px] lg:h-[722px] ease-in duration-100 border border-purple-500 rounded-3xl backdrop-blur-sm bg-white/30 group-hover:bg-purple-300/30 hover:from-purple-300 relative`}
+                  className={`gradient-border-mask w-[113px] h-[150px] lg:w-[542px] lg:h-[722px] ease-in duration-100 rounded-3xl backdrop-blur-sm bg-white/30 group-hover:bg-purple-300/30 hover:from-purple-300 relative`}
                 ></div>
                 <div
                   className={`absolute w-[113px] h-[150px] lg:w-[542px] lg:h-[722px] lg:-top-[60px] lg:-left-[80px] -top-[20px] -left-[30px]`}
@@ -119,7 +126,7 @@ function About() {
                 className={`w-[135px] h-[150px] lg:w-[542px] lg:h-[722px] relative group right-0 lg:right-[50px]`}
               >
                 <div
-                  className={`w-[135px] h-[150px] lg:w-[600px] lg:h-[732px] ease-in duration-100 border border-purple-500 rounded-3xl backdrop-blur-sm bg-white/30 group-hover:bg-purple-300/30 hover:from-purple-300 relative`}
+                  className={`gradient-border-mask w-[135px] h-[150px] lg:w-[600px] lg:h-[732px] ease-in duration-100 rounded-3xl backdrop-blur-sm bg-white/30 group-hover:bg-purple-300/30 hover:from-purple-300 relative`}
                 ></div>
                 <div
                   className={`absolute w-[135px] h-[150px] lg:w-[450px] lg:h-[500px] lg:-top-[60px] lg:right-[10px] -top-[20px] -right-[12px]`}
@@ -146,7 +153,7 @@ function About() {
                 className={`w-[113px] h-[150px] lg:w-[542px] lg:h-[722px] relative group right-0 lg:right-[50px]`}
               >
                 <div
-                  className={`w-[113px] h-[150px] lg:w-[542px] lg:h-[722px] ease-in duration-100 border border-purple-500 rounded-3xl backdrop-blur-sm bg-white/30 group-hover:bg-purple-300/30 hover:from-purple-300 relative`}
+                  className={`gradient-border-mask w-[113px] h-[150px] lg:w-[542px] lg:h-[722px] ease-in duration-100 rounded-3xl backdrop-blur-sm bg-white/30 group-hover:bg-purple-300/30 hover:from-purple-300 relative`}
                 ></div>
                 <div
                   className={`absolute w-[113px] h-[150px] lg:w-[542px] lg:h-[722px] lg:-top-[60px] lg:-right-[80px] -top-[20px] -right-[30px]`}

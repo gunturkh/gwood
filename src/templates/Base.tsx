@@ -67,7 +67,7 @@ const Base = () => {
     >
       <Navbar />
       <Meta title={AppConfig.title} description={AppConfig.description} />
-      <div className="fixed max-h-[100vh] w-[40px] h-[200px] md:w-[72px] md:h-[550px] bg-[#820100] top-[120px] flex flex-col justify-evenly py-[100px] rounded-tr-3xl rounded-br-3xl shadow z-50">
+      <div className="fixed max-h-[100vh] w-[40px] h-[200px] md:w-[60px] md:h-[550px] bg-[#820100] top-[120px] flex flex-col justify-evenly py-[100px] rounded-tr-3xl rounded-br-3xl shadow drop-shadow-md z-50">
         <a
           href="https://www.facebook.com/gwood.asia.9/"
           target="_blank"
