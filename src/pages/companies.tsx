@@ -4,9 +4,9 @@ import { Transition } from '@headlessui/react';
 import Image from 'next/image';
 import { ImArrowRight2 } from 'react-icons/im';
 
+import btm from '../../public/assets/images/about4.png';
 import aus from '../../public/assets/images/companies-aus.png';
 import bg from '../../public/assets/images/companies-bg-1.png';
-import btm from '../../public/assets/images/companies-btm.png';
 import jkt from '../../public/assets/images/companies-jkt.png';
 import main from '../../public/assets/images/companies-main.png';
 import sgp from '../../public/assets/images/companies-sgp.png';
