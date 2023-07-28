@@ -40,7 +40,7 @@ function About() {
             height: '100%',
           }}
         >
-          <div className="h-[735px] md:h-screen">
+          <div className="h-[600px] md:h-screen">
             <div className="flex">
               <img
                 src={logo.src}
@@ -61,7 +61,7 @@ function About() {
               />
             </div>
           </div>
-          <div className="h-[300px] md:h-screen text-[12px] sm:text-[20px] lg:text-[40px] font-thin text-left relative -left-[50px]">
+          <div className="h-[300px] md:h-screen text-[12px] sm:text-[20px] lg:text-[30px] font-thin text-left relative -left-[50px]">
             <div className="flex flex-row  w-full justify-center items-center">
               <div className="max-w-[50vw] p-4 lg:p-20 mb-16 ">
                 <p>
@@ -71,38 +71,38 @@ function About() {
                 </p>
               </div>
               <div
-                className={`w-[113px] h-[150px] lg:w-[551px] lg:h-[735px] relative group`}
+                className={`w-[113px] h-[150px] lg:w-[430px] lg:h-[600px] relative group`}
               >
                 <div
-                  className={`gradient-border-mask w-[113px] h-[150px] lg:w-[551px] lg:h-[735px] ease-in duration-100 rounded-3xl backdrop-blur-sm transition-all bg-white/40 from-white/80 to-white/10 group-hover:bg-white/50 group-hover:bg-gradient-to-br group-hover:from-[#FF6F07]/20 group-hover:via-[#FF6F07]/5 group-hover:to-transparent relative`}
+                  className={`gradient-border-mask w-[113px] h-[150px] lg:w-[430px] lg:h-[600px] ease-in duration-100 rounded-3xl backdrop-blur-sm transition-all bg-white/40 from-white/80 to-white/10 group-hover:bg-white/50 group-hover:bg-gradient-to-br group-hover:from-[#FF6F07]/20 group-hover:via-[#FF6F07]/5 group-hover:to-transparent relative`}
                 ></div>
                 <div
-                  className={`absolute w-[113px] h-[150px] lg:w-[551px] lg:h-[735px] lg:-top-[60px] lg:-right-[80px] -top-[20px] -right-[30px]`}
+                  className={`absolute w-[113px] h-[150px] lg:w-[430px] lg:h-[600px] lg:-top-[60px] lg:-right-[80px] -top-[20px] -right-[30px]`}
                 >
                   <img
                     src={about1.src}
                     alt="Image 1"
-                    className={`w-[113px] h-[150px] lg:w-[551px] lg:h-[735px]`}
+                    className={`w-[113px] h-[150px] lg:w-[430px] lg:h-[600px]`}
                   />
                 </div>
               </div>
             </div>
           </div>
-          <div className="h-[300px] lg:h-screen text-[12px] sm:text-[20px] lg:text-[40px] font-thin text-left mt-8 lg:mt-[50vh] relative left-[50px]">
+          <div className="h-[300px] lg:h-screen text-[12px] sm:text-[20px] lg:text-[30px] font-thin text-left mt-8 lg:mt-[50px] relative left-[50px]">
             <div className="flex flex-row flex-wrap w-full items-center">
               <div
-                className={`w-[113px] h-[150px] lg:w-[551px] lg:h-[735px] relative group mr-4`}
+                className={`w-[113px] h-[150px] lg:w-[430px] lg:h-[600px] relative group mr-4`}
               >
                 <div
-                  className={`gradient-border-mask w-[113px] h-[150px] lg:w-[542px] lg:h-[722px] ease-in duration-100 rounded-3xl backdrop-blur-sm transition-all bg-white/40 from-white/80 to-white/10 group-hover:bg-white/50 group-hover:bg-gradient-to-br group-hover:from-[#FF6F07]/20 group-hover:via-[#FF6F07]/5 group-hover:to-transparent relative`}
+                  className={`gradient-border-mask w-[113px] h-[150px] lg:w-[430px] lg:h-[600px] ease-in duration-100 rounded-3xl backdrop-blur-sm transition-all bg-white/40 from-white/80 to-white/10 group-hover:bg-white/50 group-hover:bg-gradient-to-br group-hover:from-[#FF6F07]/20 group-hover:via-[#FF6F07]/5 group-hover:to-transparent relative`}
                 ></div>
                 <div
-                  className={`absolute w-[113px] h-[150px] lg:w-[542px] lg:h-[722px] lg:-top-[60px] lg:-left-[80px] -top-[20px] -left-[30px]`}
+                  className={`absolute w-[113px] h-[150px] lg:w-[430px] lg:h-[600px] lg:-top-[60px] lg:-left-[80px] -top-[20px] -left-[30px]`}
                 >
                   <img
                     src={about2.src}
                     alt="Image 2"
-                    className={`w-[113px] h-[150px] lg:w-[542px] lg:h-[722px]`}
+                    className={`w-[113px] h-[150px] lg:w-[430px] lg:h-[600px]`}
                   />
                 </div>
               </div>
@@ -116,7 +116,7 @@ function About() {
               </div>
             </div>
           </div>
-          <div className="h-[300px] lg:h-screen text-[12px] sm:text-[20px] lg:text-[40px] font-thin text-left mt-8 lg:mt-[50vh]">
+          <div className="h-[300px] lg:h-screen text-[12px] sm:text-[20px] lg:text-[30px] font-thin text-left mt-8 lg:mt-[50px]">
             <div className="flex flex-row flex-wrap w-full justify-center items-center">
               <div className="max-w-[50vw] p-4 lg:p-20 mb-16 ">
                 <p>The Gwood Asia focus is to</p>
@@ -127,38 +127,38 @@ function About() {
                 </ul>
               </div>
               <div
-                className={`w-[113px] h-[150px] lg:w-[551px] lg:h-[735px] relative group`}
+                className={`w-[113px] h-[150px] lg:w-[430px] lg:h-[600px] relative group`}
               >
                 <div
-                  className={`gradient-border-mask w-[113px] h-[150px] lg:w-[551px] lg:h-[735px] ease-in duration-100 rounded-3xl backdrop-blur-sm transition-all bg-white/40 from-white/80 to-white/10 group-hover:bg-white/50 group-hover:bg-gradient-to-br group-hover:from-[#FF6F07]/20 group-hover:via-[#FF6F07]/5 group-hover:to-transparent relative`}
+                  className={`gradient-border-mask w-[113px] h-[150px] lg:w-[430px] lg:h-[600px] ease-in duration-100 rounded-3xl backdrop-blur-sm transition-all bg-white/40 from-white/80 to-white/10 group-hover:bg-white/50 group-hover:bg-gradient-to-br group-hover:from-[#FF6F07]/20 group-hover:via-[#FF6F07]/5 group-hover:to-transparent relative`}
                 ></div>
                 <div
-                  className={`absolute w-[113px] h-[150px] lg:w-[551px] lg:h-[735px] lg:-top-[60px] lg:-right-[80px] -top-[20px] -right-[30px]`}
+                  className={`absolute w-[113px] h-[150px] lg:w-[430px] lg:h-[600px] lg:-top-[60px] lg:-right-[80px] -top-[20px] -right-[30px]`}
                 >
                   <img
                     src={about3.src}
                     alt="Image 3"
-                    className={`w-[113px] h-[150px] lg:w-[542px] lg:h-[722px]`}
+                    className={`w-[113px] h-[150px] lg:w-[430px] lg:h-[600px]`}
                   />
                 </div>
               </div>
             </div>
           </div>
-          <div className="h-[300px] lg:h-screen text-[12px] sm:text-[20px] lg:text-[40px] font-thin text-left mt-8 lg:mt-[50vh]">
+          <div className="h-[300px] lg:h-screen text-[12px] sm:text-[20px] lg:text-[30px] font-thin text-left mt-8 lg:mt-[50px]">
             <div className="flex flex-row flex-wrap w-full justify-center items-center">
               <div
-                className={`w-[113px] h-[150px] lg:w-[551px] lg:h-[735px] relative group mr-4`}
+                className={`w-[113px] h-[150px] lg:w-[430px] lg:h-[600px] relative group mr-4`}
               >
                 <div
-                  className={`gradient-border-mask w-[113px] h-[150px] lg:w-[542px] lg:h-[722px] ease-in duration-100 rounded-3xl backdrop-blur-sm transition-all bg-white/40 from-white/80 to-white/10 group-hover:bg-white/50 group-hover:bg-gradient-to-br group-hover:from-[#FF6F07]/20 group-hover:via-[#FF6F07]/5 group-hover:to-transparent relative`}
+                  className={`gradient-border-mask w-[113px] h-[150px] lg:w-[430px] lg:h-[600px] ease-in duration-100 rounded-3xl backdrop-blur-sm transition-all bg-white/40 from-white/80 to-white/10 group-hover:bg-white/50 group-hover:bg-gradient-to-br group-hover:from-[#FF6F07]/20 group-hover:via-[#FF6F07]/5 group-hover:to-transparent relative`}
                 ></div>
                 <div
-                  className={`absolute w-[113px] h-[150px] lg:w-[542px] lg:h-[722px] lg:-top-[60px] lg:-left-[80px] -top-[20px] -left-[30px]`}
+                  className={`absolute w-[113px] h-[150px] lg:w-[430px] lg:h-[600px] lg:-top-[60px] lg:-left-[80px] -top-[20px] -left-[30px]`}
                 >
                   <img
                     src={about4.src}
                     alt="Image 4"
-                    className={`w-[113px] h-[150px] lg:w-[542px] lg:h-[722px]`}
+                    className={`w-[113px] h-[150px] lg:w-[430px] lg:h-[600px]`}
                   />
                 </div>
               </div>
@@ -178,7 +178,7 @@ function About() {
               &bull; Capabilities
             </h1>
           </div>
-          <div className="h-[300px] md:h-screen text-[12px] sm:text-[20px] lg:text-[40px] font-thin text-left text-white">
+          <div className="h-[300px] md:h-screen text-[12px] sm:text-[20px] lg:text-[30px] font-thin text-left text-white">
             <div className="flex flex-row flex-wrap w-full justify-center items-center">
               <div className="max-w-[50vw] p-4 lg:p-20 mb-16 mr-16 ">
                 <p className="font-semibold ">CONTRACTS</p>
@@ -206,7 +206,7 @@ function About() {
               </div>
             </div>
           </div>
-          <div className="h-[500px] lg:h-screen text-[12px] md:text-[20px] lg:text-[40px] font-thin text-left mt-48 lg:mt-[50rem] text-white">
+          <div className="h-[500px] lg:h-screen text-[12px] md:text-[20px] lg:text-[30px] font-thin text-left mt-48 lg:mt-[50rem] text-white">
             <div className="flex flex-row flex-wrap w-full justify-center items-center">
               <div
                 className={`w-[113px] h-[150px] md:w-[376px] md:h-[500px] relative group mr-10`}
@@ -234,7 +234,7 @@ function About() {
               </div>
             </div>
           </div>
-          <div className="h-[500px] lg:h-screen text-[12px] md:text-[20px] lg:text-[40px] font-thin text-left mt-8 lg:mt-48 text-white">
+          <div className="h-[500px] lg:h-screen text-[12px] md:text-[20px] lg:text-[30px] font-thin text-left mt-8 lg:mt-48 text-white">
             <div className="flex flex-row flex-wrap w-full justify-center items-center">
               <div className="max-w-[50vw] p-4 lg:p-20 mb-16 ">
                 <p className="font-semibold ">COMMERCIAL</p>
@@ -262,7 +262,7 @@ function About() {
               </div>
             </div>
           </div>
-          <div className="h-[500px] lg:h-screen text-[12px] md:text-[20px] lg:text-[40px] font-thin text-left mt-8 lg:mt-[30rem] text-white">
+          <div className="h-[500px] lg:h-screen text-[12px] md:text-[20px] lg:text-[30px] font-thin text-left mt-8 lg:mt-[30rem] text-white">
             <div className="flex flex-row flex-wrap w-full justify-center items-center">
               <div
                 className={`w-[113px] h-[150px] md:w-[376px] md:h-[500px] relative group mr-10`}

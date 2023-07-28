@@ -63,11 +63,11 @@ function Navbar() {
                 About Us
               </Link>
             </div>
-            <div className="hover:bg-[#820100] mx-[10px] py-2 hover:text-white hover:font-semibold font-medium rounded-xl">
+            {/* <div className="hover:bg-[#820100] mx-[10px] py-2 hover:text-white hover:font-semibold font-medium rounded-xl">
               <Link href="/capabilities" className="my-4">
                 Capabilities
               </Link>
-            </div>
+            </div> */}
             <div className="hover:bg-[#820100] mx-[10px] py-2 hover:text-white hover:font-semibold font-medium rounded-xl">
               <Link href="/companies" className="my-4">
                 Companies
