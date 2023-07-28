@@ -173,12 +173,12 @@ function About() {
           </div>
 
           {/* capabilities */}
-          <div className="h-[500px] md:h-screen w-full">
+          <div className="h-[500px] md:h-[50vh] w-full">
             <h1 className="text-right lg:text-[80px] font-semibold mt-0 lg:mt-32">
               &bull; Capabilities
             </h1>
           </div>
-          <div className="h-[300px] md:h-screen text-[12px] sm:text-[20px] lg:text-[30px] font-thin text-left text-white">
+          <div className="h-[300px] md:h-[500px] text-[12px] sm:text-[20px] lg:text-[30px] font-thin text-left text-white">
             <div className="flex flex-row flex-wrap w-full justify-center items-center">
               <div className="max-w-[50vw] p-4 lg:p-20 mb-16 mr-16 ">
                 <p className="font-semibold ">CONTRACTS</p>
@@ -206,7 +206,7 @@ function About() {
               </div>
             </div>
           </div>
-          <div className="h-[500px] lg:h-screen text-[12px] md:text-[20px] lg:text-[30px] font-thin text-left mt-48 lg:mt-[50rem] text-white">
+          <div className="h-[500px] md:h-[500px] text-[12px] md:text-[20px] lg:text-[30px] font-thin text-left mt-32 lg:mt-[3rem] text-white">
             <div className="flex flex-row flex-wrap w-full justify-center items-center">
               <div
                 className={`w-[113px] h-[150px] md:w-[376px] md:h-[500px] relative group mr-10`}
@@ -234,7 +234,7 @@ function About() {
               </div>
             </div>
           </div>
-          <div className="h-[500px] lg:h-screen text-[12px] md:text-[20px] lg:text-[30px] font-thin text-left mt-8 lg:mt-48 text-white">
+          <div className="h-[500px] md:h-[500px] text-[12px] md:text-[20px] lg:text-[30px] font-thin text-left mt-8 lg:mt-48 text-white">
             <div className="flex flex-row flex-wrap w-full justify-center items-center">
               <div className="max-w-[50vw] p-4 lg:p-20 mb-16 ">
                 <p className="font-semibold ">COMMERCIAL</p>
@@ -262,7 +262,7 @@ function About() {
               </div>
             </div>
           </div>
-          <div className="h-[500px] lg:h-screen text-[12px] md:text-[20px] lg:text-[30px] font-thin text-left mt-8 lg:mt-[30rem] text-white">
+          <div className="h-[500px] md:h-[500px] text-[12px] md:text-[20px] lg:text-[30px] font-thin text-left mt-8 lg:mt-[3rem] text-white">
             <div className="flex flex-row flex-wrap w-full justify-center items-center">
               <div
                 className={`w-[113px] h-[150px] md:w-[376px] md:h-[500px] relative group mr-10`}
