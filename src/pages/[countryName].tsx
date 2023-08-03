@@ -132,7 +132,7 @@ function About() {
                 <a
                   href="Gwood_certificate_of_registration.pdf"
                   className="text-black ml-4"
-                  download
+                  download="Gwood_certificate_of_registration.pdf"
                 >
                   Australia Company Registered Documents.pdf
                 </a>
@@ -222,14 +222,14 @@ function About() {
                   <a
                     href="Batam_SIUP_2018.pdf"
                     className="text-black ml-4 mb-4"
-                    download
+                    download="Batam_SIUP_2018.pdf"
                   >
                     Batam Company Registered Documents.pdf
                   </a>
                   <a
                     href="Surat_Keterangan_Domisili_Jkt_2.pdf"
                     className="text-black ml-4"
-                    download
+                    download="Surat_Keterangan_Domisili_Jkt_2.pdf"
                   >
                     Jakarta Company Registered Documents.pdf
                   </a>
@@ -321,7 +321,7 @@ function About() {
                 <a
                   href="SGP_Reg.pdf"
                   className="text-black ml-4"
-                  rel="noreferrer"
+                  download="SGP_Reg.pdf"
                 >
                   Singapore Company Registered Documents.pdf
                 </a>
