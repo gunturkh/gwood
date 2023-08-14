@@ -101,7 +101,7 @@ const Base = () => {
             className="w-[40px] h-[40px] md:w-[80px] md:h-[80px]"
           />
         </a>
-        <a href="https://wa.me/+6581390383" target="_blank" rel="noreferrer">
+        <a href="http://wa.me/+6285738259296" target="_blank" rel="noreferrer">
           <img
             src={'/assets/images/wa.svg'}
             alt="Whatsapp"
