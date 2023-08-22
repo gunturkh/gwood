@@ -7,7 +7,7 @@ import { useRouter } from 'next/router';
 import { GlobeMethods } from 'react-globe.gl';
 import { SizeMe } from 'react-sizeme';
 
-import bg from '../../public/assets/images/newbg.png';
+import bg from '../../public/assets/images/newbg1.png';
 import { Meta } from '../layout/Meta';
 import Navbar from '../navigation/Navbar';
 import { AppConfig } from '../utils/AppConfig';
@@ -60,6 +60,8 @@ const Base = () => {
       style={{
         backgroundImage: `url(${bg.src})`,
         backgroundSize: 'cover',
+        backgroundPosition: '0% 75%',
+        backgroundRepeat: 'no-repeat',
         width: '100vw',
         height: '100vh',
         overflow: 'hidden',
@@ -67,7 +69,7 @@ const Base = () => {
     >
       <Navbar />
       <Meta title={AppConfig.title} description={AppConfig.description} />
-      <div className="fixed max-h-[100vh] w-[40px] h-[200px] md:w-[60px] md:h-[550px] bg-[#820100] top-[120px] flex flex-col justify-evenly py-[100px] rounded-tr-3xl rounded-br-3xl shadow drop-shadow-md z-50">
+      <div className="fixed max-h-[100vh] w-[40px] h-[200px] md:w-[60px] md:h-[550px] bg-[#820100] top-[136px] flex flex-col justify-evenly py-[100px] rounded-tr-3xl rounded-br-3xl shadow drop-shadow-md z-50">
         <a
           href="https://www.facebook.com/gwood.asia.9/"
           target="_blank"
@@ -115,7 +117,7 @@ const Base = () => {
           <div
             style={{
               marginLeft: (width as number) <= 400 ? 50 : 0,
-              marginTop: (width as number) <= 400 ? 100 : 64,
+              marginTop: (width as number) <= 400 ? 100 : 0,
             }}
           >
             {/* <div>{`width: ${width} & height: ${height}`}</div> */}
@@ -127,7 +129,7 @@ const Base = () => {
                   lng: 104.961116,
                   // lat: -13.3766016,
                   // lng: 127.342919,
-                  altitude: 1.5,
+                  altitude: 2,
                 };
                 if (globeEl && globeEl.current) {
                   globeEl?.current?.pointOfView(MAP_CENTER, 100);

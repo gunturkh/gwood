@@ -9,8 +9,11 @@ function Navbar() {
   const router = useRouter();
   return (
     <div
-      className="navbar px-10 fixed top-0 z-50"
-      style={{ backgroundColor: '#ffffff' }}
+      className={`navbar px-10 fixed top-0 z-50 ${
+        router?.pathname === '/'
+          ? 'bg-transparent backdrop-blur-lg '
+          : 'bg-[#fff]'
+      }`}
     >
       <div className="navbar-start">
         <img
@@ -27,7 +30,7 @@ function Navbar() {
           Gwood Asia
         </a>
       </div>
-      <div className="navbar-end ">
+      <div className="navbar-end">
         <div style={{ color: '#151206', fontWeight: 600 }}>Menu</div>
         <div
           className="dropdown dropdown-bottom dropdown-end"
