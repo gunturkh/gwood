@@ -10,6 +10,7 @@ import bg from '../../public/assets/images/companies-bg-1.png';
 import jkt from '../../public/assets/images/companies-jkt.png';
 import main from '../../public/assets/images/companies-main.png';
 import sgp from '../../public/assets/images/companies-sgp.png';
+import trademark from '../../public/assets/images/trademark.jpg';
 import { Footer } from '../footer/MainFooter';
 import Navbar from '../navigation/Navbar';
 
@@ -46,9 +47,9 @@ function Companies() {
             </div>
             <div className="collapse-content text-[30px]">
               <p className="text-white font-thin ml-20 ">
-                10 Anson Road #05-17 International Plaza,
+                100 Tras Street #09-01 100AM,
               </p>
-              <p className="text-white font-thin ml-20 ">Singapore 079903</p>
+              <p className="text-white font-thin ml-20 ">Singapore 079027</p>
             </div>
           </div>
           <div
@@ -120,6 +121,28 @@ function Companies() {
               </p>
               <p className="text-white font-thin ml-20 ">Jakarta 12920</p>
             </div>
+          </div>
+          <div
+            tabIndex={4}
+            onClick={() => setCompanyIndex(5)}
+            className="collapse group border-b-2 border-gray-500 hover:border-b-0 flex flex-col"
+          >
+            <div className="flex flex-row items-center">
+              <ImArrowRight2
+                style={{ fontSize: 40, marginRight: 10 }}
+                className="mr-4 text-white group-hover:block hidden"
+              />
+              <p className="text-white text-[40px] group-hover:font-bold">
+                {'Gwood Trademark Certification'}
+              </p>
+            </div>
+            {/* <div className="collapse-content text-[30px]">
+              <p className="text-white font-thin ml-20 ">WTC 5 lantai 3A</p>
+              <p className="text-white font-thin ml-20 ">
+                Jalan Jendral Sudirman Kav 29-31
+              </p>
+              <p className="text-white font-thin ml-20 ">Jakarta 12920</p>
+            </div> */}
           </div>
         </div>
         <Transition
@@ -222,7 +245,7 @@ function Companies() {
           </div>
         </Transition>
 
-        <Transition
+        {/* <Transition
           show={companyIndex === 5}
           enter="transition duration-200"
           enterFrom="opacity-0 scale-150"
@@ -236,6 +259,26 @@ function Companies() {
               layout="responsive"
               src={main}
               alt="Company Main"
+              width={536}
+              height={620}
+            />
+          </div>
+        </Transition> */}
+
+        <Transition
+          show={companyIndex === 5}
+          enter="transition duration-200"
+          enterFrom="opacity-0 scale-150"
+          enterTo="opacity-100 scale-100"
+          leave="transition duration-200"
+          leaveFrom="opacity-100 scale-100"
+          leaveTo="opacity-0 scale-150"
+        >
+          <div className="w-[600px] h-full">
+            <Image
+              layout="responsive"
+              src={trademark}
+              alt="Company Trademark"
               width={536}
               height={620}
             />

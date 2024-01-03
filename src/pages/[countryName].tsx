@@ -130,7 +130,7 @@ function About() {
                   className="w-[54px] h-[56px]"
                 />
                 <a
-                  href="Gwood_certificate_of_registration.pdf"
+                  href="https://drive.google.com/file/d/1ZsWPou7-e9IILkW6mtVdvCQI0s3poEXI/view?usp=drive_link"
                   className="text-black ml-4"
                   download="Gwood_certificate_of_registration.pdf"
                 >
@@ -220,14 +220,14 @@ function About() {
                 />
                 <div className="flex flex-col justify-start mt-4">
                   <a
-                    href="Batam_SIUP_2018.pdf"
+                    href="https://drive.google.com/file/d/1rPdDLgV7DFd6vVi4jOTnTQ0IUWa90Sq9/view?usp=drive_link"
                     className="text-black ml-4 mb-4"
                     download="Batam_SIUP_2018.pdf"
                   >
                     Batam Company Registered Documents.pdf
                   </a>
                   <a
-                    href="Surat_Keterangan_Domisili_Jkt_2.pdf"
+                    href="https://drive.google.com/file/d/1Ebe-Am_sXV4F0t-bREplVeFYJ5Wp4eGb/view?usp=drive_link"
                     className="text-black ml-4"
                     download="Surat_Keterangan_Domisili_Jkt_2.pdf"
                   >
@@ -319,7 +319,7 @@ function About() {
                   className="w-[54px] h-[56px]"
                 />
                 <a
-                  href="SGP_Reg.pdf"
+                  href="https://drive.google.com/file/d/1Q-VpNq4fU_an8jhbPruZbTJxASf3UbIf/view?usp=drive_link"
                   className="text-black ml-4"
                   download="SGP_Reg.pdf"
                 >
