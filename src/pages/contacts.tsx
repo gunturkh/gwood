@@ -68,7 +68,7 @@ function Contacts() {
           />
         );
         text = <p className="text-xl text-[#6975E1]">FACEBOOK</p>;
-        link = 'https://www.facebook.com/gwood.asia.9';
+        link = 'https://www.facebook.com/profile.php?id=100092550061655';
         break;
       default:
         img = <></>;
