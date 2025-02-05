@@ -47,7 +47,7 @@ function About() {
       case 'singapore':
         return `GWOOD SUPPLY & DISTRIBUTION PTE. LTD`;
       case 'australia':
-        return `GWOOD COMMUNICATORS PTY LTD`;
+        return `GOODWOOD COMMUNICATORS PTY LTD`;
       case 'indonesia':
         return `PT GWOOD INDONESIA`;
       default:
